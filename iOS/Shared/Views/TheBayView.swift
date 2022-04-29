@@ -13,7 +13,11 @@ struct TheBayView: View {
     
     var body: some View {
         VStack {
-            Button("Ask") {
+            Divider()
+            Text("Welcome to MedBay!")
+                .font(.title)
+            Spacer()
+            Button("Ask a question!") {
               presentPopup = true
             }
             .popover(isPresented: $presentPopup, arrowEdge: .bottom) {
@@ -24,8 +28,9 @@ struct TheBayView: View {
             }
         }
         .onAppear() {
-            TestRequest.request()
-            QuestionRequest.request()
+            //TestRequest.request()
+            //QuestionRequest.request()
         }
+        .navigationTitle("MedBay")
     }
 }

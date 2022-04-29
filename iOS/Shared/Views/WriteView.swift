@@ -11,7 +11,7 @@ struct WriteView: View {
     @State private var title: String = ""
     @FocusState private var titleFieldIsFocused: Bool
     
-    @State private var paragraph: String = "Description"
+    @State private var paragraph: String = ""
     @FocusState private var paragraphFieldIsFocused: Bool
     
     @Binding var questions: [Question]
@@ -19,7 +19,6 @@ struct WriteView: View {
     @Environment(\.presentationMode) var presentationMode
     
     var body: some View {
-        
         VStack {
             HStack {
                 Button("Never mind") {
@@ -31,16 +30,18 @@ struct WriteView: View {
                     presentationMode.wrappedValue.dismiss()
                 }
             }
-            TextField("title", text: $title)
+            Divider()
+            Text("Question")
+                .font(.headline)
+            TextField("", text: $title)
                 .focused($titleFieldIsFocused)
-                .textInputAutocapitalization(.never)
-                .disableAutocorrection(true)
                 .border(.primary)
+            Text("Description")
             TextEditor(text: $paragraph)
                 .focused($paragraphFieldIsFocused)
-                .textInputAutocapitalization(.never)
-                .disableAutocorrection(true)
                 .border(.secondary)
         }
+        
+        .padding()
     }
 }

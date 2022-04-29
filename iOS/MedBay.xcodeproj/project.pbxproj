@@ -15,8 +15,8 @@
 		17CC97AA28105D8E0039605F /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CC97A928105D8E0039605F /* Tests_macOSLaunchTests.swift */; };
 		17CC97AB28105D8E0039605F /* MedBayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CC978328105D8B0039605F /* MedBayApp.swift */; };
 		17CC97AC28105D8E0039605F /* MedBayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CC978328105D8B0039605F /* MedBayApp.swift */; };
-		17CC97AD28105D8E0039605F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CC978428105D8B0039605F /* ContentView.swift */; };
-		17CC97AE28105D8E0039605F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CC978428105D8B0039605F /* ContentView.swift */; };
+		17CC97AD28105D8E0039605F /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CC978428105D8B0039605F /* MainView.swift */; };
+		17CC97AE28105D8E0039605F /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CC978428105D8B0039605F /* MainView.swift */; };
 		17CC97AF28105D8E0039605F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17CC978528105D8E0039605F /* Assets.xcassets */; };
 		17CC97B028105D8E0039605F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17CC978528105D8E0039605F /* Assets.xcassets */; };
 		17DA9692281064BA009F101A /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DA9691281064BA009F101A /* QuestionView.swift */; };
@@ -52,7 +52,7 @@
 		176072FA281174D40028C5B6 /* TestRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRequest.swift; sourceTree = "<group>"; };
 		176072FC2811796D0028C5B6 /* QuestionRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionRequest.swift; sourceTree = "<group>"; };
 		17CC978328105D8B0039605F /* MedBayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedBayApp.swift; sourceTree = "<group>"; };
-		17CC978428105D8B0039605F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		17CC978428105D8B0039605F /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		17CC978528105D8E0039605F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17CC978A28105D8E0039605F /* MedBay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedBay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17CC979028105D8E0039605F /* MedBay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedBay.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -174,7 +174,7 @@
 		17DA969A28106655009F101A /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				17CC978428105D8B0039605F /* ContentView.swift */,
+				17CC978428105D8B0039605F /* MainView.swift */,
 				17DA9691281064BA009F101A /* QuestionView.swift */,
 				17DA969D28106694009F101A /* QuestionRow.swift */,
 				17DA96A0281068E5009F101A /* TheBayView.swift */,
@@ -351,7 +351,7 @@
 			files = (
 				176072FD2811796D0028C5B6 /* QuestionRequest.swift in Sources */,
 				17DA96A428106A93009F101A /* WriteView.swift in Sources */,
-				17CC97AD28105D8E0039605F /* ContentView.swift in Sources */,
+				17CC97AD28105D8E0039605F /* MainView.swift in Sources */,
 				17DA96A1281068E5009F101A /* TheBayView.swift in Sources */,
 				17DA9692281064BA009F101A /* QuestionView.swift in Sources */,
 				17DA969E28106694009F101A /* QuestionRow.swift in Sources */,
@@ -366,7 +366,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				17DA96A528106A93009F101A /* WriteView.swift in Sources */,
-				17CC97AE28105D8E0039605F /* ContentView.swift in Sources */,
+				17CC97AE28105D8E0039605F /* MainView.swift in Sources */,
 				17DA96A2281068E5009F101A /* TheBayView.swift in Sources */,
 				17DA9693281064BA009F101A /* QuestionView.swift in Sources */,
 				17DA969F28106694009F101A /* QuestionRow.swift in Sources */,

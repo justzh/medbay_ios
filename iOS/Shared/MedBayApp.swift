@@ -11,7 +11,7 @@ import SwiftUI
 struct MedBayApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
         }
     }
 }
