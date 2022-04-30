@@ -21,15 +21,17 @@ struct TheBayView: View {
               presentPopup = true
             }
             .popover(isPresented: $presentPopup, arrowEdge: .bottom) {
-              WriteView(questions: $questions)
+                WriteView(questions: $questions)
             }
             List(questions, id: \.id) { question in
                 QuestionRow(question: question)
             }
         }
         .onAppear() {
-            //TestRequest.request()
-            //QuestionRequest.request()
+            TestRequest.request()
+            QuestionsRequest.request { questions in
+                self.questions = questions
+            }
         }
         .navigationTitle("MedBay")
     }

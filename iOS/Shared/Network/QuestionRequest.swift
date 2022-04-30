@@ -10,9 +10,7 @@ import Foundation
 struct QuestionRequest {
     static var id = 1
     
-    static func request() {
-        let question: Question = Question(id: id, title: "\(id)", body: "\(id)")
-        id += 1
+    static func request(question: Question) {
         let params: Dictionary<String, Dictionary> = ["question": question.dictionary]
         
         var request = URLRequest(url: URL(string: "http://localhost:3000/api/post-question")!)

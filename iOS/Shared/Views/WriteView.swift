@@ -26,7 +26,9 @@ struct WriteView: View {
                 }
                 Spacer()
                 Button("Okay") {
-                    questions.append(Question(id: questions.count, title: title, body: paragraph))
+                    let q: Question = Question(id: questions.count, title: title, body: paragraph)
+                    QuestionRequest.request(question: q)
+                    questions.append(q)
                     presentationMode.wrappedValue.dismiss()
                 }
             }
