@@ -10,7 +10,7 @@ import Foundation
 struct QuestionsRequest {
 
     static func request(_ completion: @escaping ([Question]) -> Void) {
-        var request = URLRequest(url: URL(string: "http://localhost:3000/api/get-questions")!)
+        var request = URLRequest(url: URL(string: "https://medbay-web.vercel.app/api/get-questions")!)
         request.httpMethod = "GET"
         
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")

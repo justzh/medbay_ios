@@ -28,7 +28,6 @@ struct WriteView: View {
                 Button("Okay") {
                     let q: Question = Question(id: questions.count, title: title, body: paragraph)
                     QuestionRequest.request(question: q)
-                    questions.append(q)
                     presentationMode.wrappedValue.dismiss()
                 }
             }

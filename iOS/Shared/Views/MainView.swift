@@ -10,16 +10,16 @@ import SwiftUI
 struct MainView: View {
     var body: some View {
         TabView {
-                TheBayView(presentPopup: false, questions: [])
-                    .tabItem {
-                        Image(systemName: "heart.fill")
-                        Text("The Bay")
-                }
-                Text("Friends Screen")
-                    .tabItem {
-                        Image(systemName: "person.fill")
-                        Text("Popular")
-                }
+            TheBayView(presentPopup: false, questions: [])
+                .tabItem {
+                    Image(systemName: "heart.fill")
+                    Text("The Bay")
             }
+            Text("Friends Screen")
+                .tabItem {
+                    Image(systemName: "person.fill")
+                    Text("Popular")
+            }
+        }
     }
 }

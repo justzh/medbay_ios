@@ -12,27 +12,31 @@ struct TheBayView: View {
     @State var questions: [Question]
     
     var body: some View {
-        VStack {
-            Divider()
-            Text("Welcome to MedBay!")
-                .font(.title)
-            Spacer()
-            Button("Ask a question!") {
-              presentPopup = true
+        NavigationView {
+            VStack {
+//                Divider()
+//                Text("Welcome!")
+//                    .font(.title)
+//                Spacer()
+                Button("Ask a question!") {
+                  presentPopup = true
+                }
+                .popover(isPresented: $presentPopup, arrowEdge: .bottom) {
+                    WriteView(questions: $questions)
+                }
+                List(questions, id: \.id) { question in
+                    NavigationLink(destination: QuestionView(question: question)) {
+                        QuestionRow(question: question)
+                    }
+                }
             }
-            .popover(isPresented: $presentPopup, arrowEdge: .bottom) {
-                WriteView(questions: $questions)
-            }
-            List(questions, id: \.id) { question in
-                QuestionRow(question: question)
-            }
+            .navigationTitle("Welcome to MedBay!")
         }
         .onAppear() {
-            TestRequest.request()
+            //TestRequest.request()
             QuestionsRequest.request { questions in
                 self.questions = questions
             }
         }
-        .navigationTitle("MedBay")
     }
 }

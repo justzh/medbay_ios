@@ -10,7 +10,7 @@ import Foundation
 struct TestRequest {
     static func request() {
 
-        var request = URLRequest(url: URL(string: "http://localhost:3000/api/test")!)
+        var request = URLRequest(url: URL(string: "https://medbay-web.vercel.app/api/test")!)
         request.httpMethod = "GET"
         
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")

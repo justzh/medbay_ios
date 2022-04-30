@@ -8,10 +8,14 @@
 import SwiftUI
 
 struct QuestionView: View {
+    
+    @State var question: Question
+    
     var body: some View {
         VStack(alignment: .leading) {
-            Text("Hello, World!")
-                .font(.title)
+            Text("\(question.id)")
+            Text(question.title)
+            Text(question.body)
         }
     }
 }

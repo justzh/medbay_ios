@@ -13,7 +13,7 @@ struct QuestionRequest {
     static func request(question: Question) {
         let params: Dictionary<String, Dictionary> = ["question": question.dictionary]
         
-        var request = URLRequest(url: URL(string: "http://localhost:3000/api/post-question")!)
+        var request = URLRequest(url: URL(string: "https://medbay-web.vercel.app/api/post-question")!)
         request.httpMethod = "POST"
         request.httpBody = try? JSONSerialization.data(withJSONObject: params, options: [])
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
