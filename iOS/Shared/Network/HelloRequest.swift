@@ -1,5 +1,5 @@
 //
-//  TestRequest.swift
+//  HelloRequest.swift
 //  MedBay (iOS)
 //
 //  Created by Justin Zhang on 4/21/22.
@@ -7,10 +7,10 @@
 
 import Foundation
 
-struct TestRequest {
+struct HelloRequest {
     static func request() {
 
-        var request = URLRequest(url: URL(string: "https://medbay-web.vercel.app/api/test")!)
+        var request = URLRequest(url: URL(string: "https://medbay.vercel.app/api/hello")!)
         request.httpMethod = "GET"
         
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")

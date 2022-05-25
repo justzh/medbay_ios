@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		176072FB281174D40028C5B6 /* TestRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176072FA281174D40028C5B6 /* TestRequest.swift */; };
+		176072FB281174D40028C5B6 /* HelloRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176072FA281174D40028C5B6 /* HelloRequest.swift */; };
 		176072FD2811796D0028C5B6 /* QuestionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176072FC2811796D0028C5B6 /* QuestionRequest.swift */; };
 		17CC5710281D69C400455B68 /* QuestionsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CC570F281D69C400455B68 /* QuestionsRequest.swift */; };
 		17CC979C28105D8E0039605F /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CC979B28105D8E0039605F /* Tests_iOS.swift */; };
@@ -50,7 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		176072FA281174D40028C5B6 /* TestRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRequest.swift; sourceTree = "<group>"; };
+		176072FA281174D40028C5B6 /* HelloRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloRequest.swift; sourceTree = "<group>"; };
 		176072FC2811796D0028C5B6 /* QuestionRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionRequest.swift; sourceTree = "<group>"; };
 		17CC570F281D69C400455B68 /* QuestionsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsRequest.swift; sourceTree = "<group>"; };
 		17CC978328105D8B0039605F /* MedBayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedBayApp.swift; sourceTree = "<group>"; };
@@ -107,7 +107,7 @@
 		176072F9281174930028C5B6 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				176072FA281174D40028C5B6 /* TestRequest.swift */,
+				176072FA281174D40028C5B6 /* HelloRequest.swift */,
 				176072FC2811796D0028C5B6 /* QuestionRequest.swift */,
 				17CC570F281D69C400455B68 /* QuestionsRequest.swift */,
 			);
@@ -359,7 +359,7 @@
 				17DA9692281064BA009F101A /* QuestionView.swift in Sources */,
 				17CC5710281D69C400455B68 /* QuestionsRequest.swift in Sources */,
 				17DA969E28106694009F101A /* QuestionRow.swift in Sources */,
-				176072FB281174D40028C5B6 /* TestRequest.swift in Sources */,
+				176072FB281174D40028C5B6 /* HelloRequest.swift in Sources */,
 				17CC97AB28105D8E0039605F /* MedBayApp.swift in Sources */,
 				17DA969528106564009F101A /* Question.swift in Sources */,
 			);

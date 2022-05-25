@@ -33,7 +33,7 @@ struct TheBayView: View {
             .navigationTitle("Welcome to MedBay!")
         }
         .onAppear() {
-            //TestRequest.request()
+            HelloRequest.request()
             QuestionsRequest.request { questions in
                 self.questions = questions
             }
